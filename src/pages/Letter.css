@@ -1,0 +1,97 @@
+.letter-page {
+  padding: 100px 20px 60px;
+  min-height: 100vh;
+  background: #141414;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letter-container {
+  max-width: 680px;
+  width: 100%;
+  background: rgba(20, 20, 20, 0.95);
+  border: 1px solid rgba(229, 9, 20, 0.25);
+  border-radius: 16px;
+  padding: 48px 52px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.letter-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.letter-heart {
+  font-size: 2.2rem;
+  color: #e50914;
+  margin-bottom: 12px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+.letter-title {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+}
+
+.letter-body {
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.85;
+  font-family: Georgia, serif;
+}
+
+.letter-body p {
+  margin-bottom: 20px;
+}
+
+.letter-salutation {
+  font-size: 1.2rem;
+  color: #e91e8c;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.letter-closing {
+  font-style: italic;
+  color: #e91e8c;
+  font-size: 1.05rem;
+}
+
+.letter-signature {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.signature-heart {
+  font-size: 1.8rem;
+  color: #e50914;
+}
+
+.letter-note {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.2);
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 600px) {
+  .letter-container {
+    padding: 32px 24px;
+  }
+}
